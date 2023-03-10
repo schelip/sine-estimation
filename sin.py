@@ -147,7 +147,7 @@ def sin_pade_predef(x: float) -> float:
         power *= x * x
     return a / b
 
-def estimate() -> tuple(list(float), list(float), list(float), list(float)):
+def estimate() -> tuple:
     """Solicita ao usuário o valor inicial, o valor final e o incremento para o cálculo dos valores de x.
     Em seguida, calcula os valores exatos de sin x para cada valor de x e os
     valores estimados por meio das expansões de Taylor e Padé.
@@ -167,7 +167,7 @@ def estimate() -> tuple(list(float), list(float), list(float), list(float)):
 
     return x_vals, y_exact, y_taylor, y_pade
 
-def export(estimate: tuple(list(float), list(float), list(float), list(float))):
+def export(estimate: tuple):
     """Se o usuário fornecer um nome de arquivo, cria um arquivo de texto e escreve as informações dos valores de x,
     os valores exatos de sin x, os valores estimados por meio das expansões de Taylor e Padé e os erros correspondentes em relação ao valor exato de sin x.
     Se o usuário não fornecer um nome de arquivo, não executa nenhuma ação
