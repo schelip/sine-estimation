@@ -19,6 +19,8 @@ Onde option é um de:
 -h | --help: mostra esta informação de uso
 ```
 
+Para a opção `--plot-values`, pode ser realizado o plot de apenas um dos métodos usando `[-m | --maclaurin, -p | --pade]`
+
 O programa irá requisitar quais os limites para os valores com quais irá realizar os cálculos. Note que é possível utilizar `math.pi` ou simplesmente `pi` para representar o valor de π, além de outras operações matemáticas seguindo a sintaxe do python. Por exemplo:
 
 ```bash
